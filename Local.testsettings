@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="Local" id="1747497b-b63c-46c6-9bbd-9937f9080ad4" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a local test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="GCMS_TestProject\bin\XML\HotelPricer.xml" />
+    <DeploymentItem filename="GCMS_TestProject\Library\BrowserExe\chromedriver.exe" />
+    <DeploymentItem filename="GCMS_TestProject\Library\BrowserExe\IEDriverServer.exe" />
+    <DeploymentItem filename="GCMS_TestProject\bin\XML\GCMS-Live.xml" />
+    <DeploymentItem filename="GCMS_TestProject\bin\XML\Beta1.xml" />
+  </Deployment>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="Execution Agents">
+    </AgentRule>
+  </Execution>
+</TestSettings>

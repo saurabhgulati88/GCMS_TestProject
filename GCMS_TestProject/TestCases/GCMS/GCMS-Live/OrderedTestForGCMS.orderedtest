@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="OrderedTestForGCMS" storage="c:\users\s.g.yu7h\documents\visual studio 2010\projects\gcms_testproject\gcms_testproject\testcases\gcms\gcms-live\orderedtestforgcms.orderedtest" id="979fbc39-7dfe-4de8-a70c-58cd2a866c7c" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="85ff564a-a662-f674-01b1-acd2beacebc4" name="JustToSignInOnlyGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="383afe63-c9e2-3073-53c2-c4f08d692dc0" name="ForHTML_ModuleGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="12b40025-3fad-e350-3381-7232d4c809c6" name="ForRSSFeedGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>
