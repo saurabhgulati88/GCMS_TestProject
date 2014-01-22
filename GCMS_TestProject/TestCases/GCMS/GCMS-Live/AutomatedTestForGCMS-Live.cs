@@ -111,7 +111,7 @@ namespace GCMS_TestProject.TestCases
 
         //}
 
-        [DeploymentItem("GCMS_TestProject\\ForHTML_Module.csv"), DeploymentItem("GCMS_TestProject\\AppData\\ForHTML_ModuleGCMS.csv"), DeploymentItem("Eclips\\ForHTML_Module.csv"), DeploymentItem("GCMS_TestProject\\ForHTML_ModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForHTML_ModuleGCMS.csv", "ForHTML_ModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
+        [DeploymentItem("GCMS_TestProject\\ForHTML_ModuleGCMS.csv"), DeploymentItem("GCMS_TestProject\\ForHTML_Module.csv"), DeploymentItem("Eclips\\ForHTML_Module.csv"), DeploymentItem("GCMS_TestProject\\AppData\\ForHTML_ModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForHTML_ModuleGCMS.csv", "ForHTML_ModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
         public void ForHTML_ModuleGCMS()
         {
             IWebDriver Driver = GCMS_TestProject.Library.TestEnvironment.Driver;
@@ -198,58 +198,58 @@ namespace GCMS_TestProject.TestCases
 
         }
 
-        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForSqlModule.csv", "ForSqlModule#csv", DataAccessMethod.Sequential), DeploymentItem("Eclips\\ForSqlModule.csv"), DeploymentItem("GCMS_TestProject\\ForSqlModule.csv"), TestMethod]
-        //public void ForSqlModuleGCMS()
-        //{
-        //    IWebDriver Driver = GCMS_TestProject.Library.TestEnvironment.Driver;
+       [DeploymentItem("GCMS_TestProject\\ForSqlModule.csv"), DeploymentItem("Eclips\\ForSqlModule.csv"), DeploymentItem("GCMS_TestProject\\AppData\\ForSqlModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForSqlModuleGCMS.csv", "ForSqlModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
+       public void ForSqlModuleGCMS()
+       {
+           IWebDriver Driver = GCMS_TestProject.Library.TestEnvironment.Driver;
 
-        //    string GCMS_admin_url = Record("Url");
-        //    Driver.Navigate().GoToUrl(GCMS_admin_url);
-        //    obj.Sleep(5);
-        //    string tabid = Record("Tabid");
-        //    string[] getTabid = tabid.Split(",".ToCharArray());
+           string GCMS_admin_url = Record("Url");
+           Driver.Navigate().GoToUrl(GCMS_admin_url);
+           obj.Sleep(5);
+           string tabid = Record("Tabid");
+           string[] getTabid = tabid.Split(",".ToCharArray());
 
-        //    string getUrl = GCMS_admin_url + "?tabid=" + getTabid[1];
-        //    Driver.Navigate().GoToUrl(getUrl);
-        //    obj.Sleep(5);
+           string getUrl = GCMS_admin_url + "?tabid=" + getTabid[1];
+           Driver.Navigate().GoToUrl(getUrl);
+           obj.Sleep(5);
 
-        //    string _findModule = "SQLTestTemplateOfNewTestTemplate";
+           string _findModule = "SQLTestTemplateOfNewTestTemplate";
 
-        //    string _deleteModule = "SQLModuleDelete";
-        //    obj.FindModulePresent(_findModule, _deleteModule); //To delete eralier one.
+           string _deleteModule = "SQLModuleDelete";
+           obj.FindModulePresent(_findModule, _deleteModule); //To delete eralier one.
 
-        //    obj.selectNewSQLModuleFromDropDown();
-        //    //To Create new SqlModule.  
-        //    string TitleOfSQL = Record("TitleOfSQL");
-        //    obj.CreateNewModuleName(TitleOfSQL);
+           obj.selectNewSQLModuleFromDropDown();
+           //To Create new SqlModule.  
+           string TitleOfSQL = Record("TitleOfSQL");
+           obj.CreateNewModuleName(TitleOfSQL);
 
-        //    //For CMS-SQL Edit
-        //    string _sqlModule = "SQLTestTemplateOfNewTestTemplate"; //xpath element same as abv.
-        //    string _sqlModuleEdit = "SQLModuleEditOfNewTestTemplate";
+           //For CMS-SQL Edit
+           string _sqlModule = "SQLTestTemplateOfNewTestTemplate"; //xpath element same as abv.
+           string _sqlModuleEdit = "SQLModuleEditOfNewTestTemplate";
 
-        //    string SQLSelect_DataSource = Record("SQLSelect DataSource");
-        //    string SQLHeaderTemplateForPublish = Record("SQLHeader Template For Publish");
-        //    //string SQLHeaderTemplateForDraft = Record("SQLHeaderTemplateForDraft");
-        //    string SQLItemTemplate = Record("SQLItem Template");
-        //    string SQLfooterTemplate = Record("SQLFooter Template");
-        //    string SQLNumberOfRecords = Record("SQLNumber Of Records");
-        //    string SQLNumberOfColumns = Record("SQLNumber Of Columns");
-        //    obj.setValuesForEditSQLmoduleForPublish(_sqlModule, _sqlModuleEdit, SQLSelect_DataSource, SQLHeaderTemplateForPublish, SQLItemTemplate, SQLfooterTemplate, SQLNumberOfRecords, SQLNumberOfColumns);
-        //    obj.Sleep(4);
+           string SQLSelect_DataSource = Record("SQLSelect DataSource");
+           string SQLHeaderTemplateForPublish = Record("SQLHeader Template For Publish");
+           //string SQLHeaderTemplateForDraft = Record("SQLHeaderTemplateForDraft");
+           string SQLItemTemplate = Record("SQLItem Template");
+           string SQLfooterTemplate = Record("SQLFooter Template");
+           string SQLNumberOfRecords = Record("SQLNumber Of Records");
+           string SQLNumberOfColumns = Record("SQLNumber Of Columns");
+           obj.setValuesForEditSQLmoduleForPublish(_sqlModule, _sqlModuleEdit, SQLSelect_DataSource, SQLHeaderTemplateForPublish, SQLItemTemplate, SQLfooterTemplate, SQLNumberOfRecords, SQLNumberOfColumns);
+           obj.Sleep(4);
 
-        //    string SQLHeaderTemplateForDraft = Record("SQLHeader Template For Draft");
-        //    obj.setValuesForEditSQLmoduleForDraft(_sqlModule, _sqlModuleEdit, SQLSelect_DataSource, SQLHeaderTemplateForDraft, SQLItemTemplate, SQLfooterTemplate, SQLNumberOfRecords, SQLNumberOfColumns);
-        //    obj.Sleep(4);
-        //    Random randomNum = new Random();
-        //    int num = randomNum.Next(5, 100);
-        //    string moduleName = Record("ModuleName");//"SQLModule";              
-        //    string preview2Url = Record("Preview2Url");
-        //    string preview1Url = Record("Preview1Url");
+           string SQLHeaderTemplateForDraft = Record("SQLHeader Template For Draft");
+           obj.setValuesForEditSQLmoduleForDraft(_sqlModule, _sqlModuleEdit, SQLSelect_DataSource, SQLHeaderTemplateForDraft, SQLItemTemplate, SQLfooterTemplate, SQLNumberOfRecords, SQLNumberOfColumns);
+           obj.Sleep(4);
+           Random randomNum = new Random();
+           int num = randomNum.Next(5, 100);
+           string moduleName = Record("ModuleName");//"SQLModule";              
+           string preview2Url = Record("Preview2Url");
+           string preview1Url = Record("Preview1Url");
 
-        //    obj.CompareOutputInChromeForPreview1(preview1Url, "For Draft", moduleName);
-        //    obj.CompareOutputInChromeForPreview2(preview2Url, "For Publish", moduleName);
+           obj.CompareOutputInChromeForPreview1(preview1Url, "For Draft", moduleName);
+           obj.CompareOutputInChromeForPreview2(preview2Url, "For Publish", moduleName);
 
-        //}
+       }
 
         public void ClickLoginAndSetSignInValues(string userName, string password)
         {
