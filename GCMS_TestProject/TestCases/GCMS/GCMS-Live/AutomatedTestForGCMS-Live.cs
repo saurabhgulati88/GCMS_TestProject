@@ -43,7 +43,7 @@ namespace GCMS_TestProject.TestCases
         }
 
 
-        [DeploymentItem("GCMS_TestProject\\ForHTML_ModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForHTML_ModuleGCMS.csv", "ForHTML_ModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod()]
+        [DeploymentItem("GCMS_TestProject\\AppData\\ForHTML_ModuleGCMS.csv"), DeploymentItem("GCMS_TestProject\\ForHTML_ModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForHTML_ModuleGCMS.csv", "ForHTML_ModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod()]
         public void JustToSignInOnlyGCMS()
         {
             IWebDriver Driver = GCMS_TestProject.Library.TestEnvironment.Driver;
@@ -111,7 +111,7 @@ namespace GCMS_TestProject.TestCases
 
         //}
 
-        [DeploymentItem("GCMS_TestProject\\ForHTML_Module.csv"), DeploymentItem("Eclips\\ForHTML_Module.csv"), DeploymentItem("GCMS_TestProject\\ForHTML_ModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForHTML_ModuleGCMS.csv", "ForHTML_ModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
+        [DeploymentItem("GCMS_TestProject\\ForHTML_Module.csv"), DeploymentItem("GCMS_TestProject\\AppData\\ForHTML_ModuleGCMS.csv"), DeploymentItem("Eclips\\ForHTML_Module.csv"), DeploymentItem("GCMS_TestProject\\ForHTML_ModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForHTML_ModuleGCMS.csv", "ForHTML_ModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
         public void ForHTML_ModuleGCMS()
         {
             IWebDriver Driver = GCMS_TestProject.Library.TestEnvironment.Driver;
