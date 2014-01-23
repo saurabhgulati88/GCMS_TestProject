@@ -14,7 +14,6 @@ namespace GCMS_TestProject.Utility
     public class GcmsUtitlity : GCMS_CodedUi
     {
 
-
         public void GetOutputResultInPreview2AndPreview1(string _launchedUrl, string _Contentspecificurls_ForPublishforModule, string _Contentspecificurls_DraftforModule)
         {
             TestEnvironment.Driver.FindElement(By.LinkText(TestEnvironment.LoadXML("LogOut"))).Click();
@@ -220,7 +219,6 @@ namespace GCMS_TestProject.Utility
         public void CompareOutputInfirefox(string _incommingUrlValue, string _editContentMultiLineTextBoxForAllUrlsForPublish, string _editContentMultiLineTextBoxForAllUrlsForDraft)
         {
 
-
             TestEnvironment.Driver.Navigate().GoToUrl("http://preprod.hotelpricer.com" + _incommingUrlValue + "?preview=2");
 
             string OutputResultDiv_WhenPublish = TestEnvironment.Driver.FindElement(By.XPath(TestEnvironment.LoadXML("OutputResultDiv"))).Text;
@@ -260,7 +258,6 @@ namespace GCMS_TestProject.Utility
         public void CompareOutputInfirefoxForBeta1Preview1(string _editContentMultiLineTextBoxForAllUrlsForDraft)
         {
 
-
             //Environment.Driver.Navigate().GoToUrl("http://beta1.cheapoair.com" + _incommingUrlValue + "?preview=1");       
 
             string OutputResultDiv_WhenDraft = TestEnvironment.Driver.FindElement(By.XPath(TestEnvironment.LoadXML("OutputResultDiv"))).Text;
@@ -272,7 +269,6 @@ namespace GCMS_TestProject.Utility
 
         public void CompareOutputInfirefoxForBeta1Preview2(string _editContentMultiLineTextBoxForAllUrlsForPublish)
         {
-
 
             //Environment.Driver.Navigate().GoToUrl("http://beta1.cheapoair.com" + _incommingUrlValue + "?preview=2");
 
@@ -300,7 +296,6 @@ namespace GCMS_TestProject.Utility
             string newContent = _newContentInMultiLineTextBox + num;
 
             TestEnvironment.Driver.FindElement(By.XPath(TestEnvironment.LoadXML("EditContentMultiLineTextBoxForBoth"))).Clear();
-
 
             TestEnvironment.Driver.FindElement(By.XPath(TestEnvironment.LoadXML("EditContentMultiLineTextBoxForBoth"))).SendKeys(newContent);
             string newStringEditableContentInMultiLineTextBox = TestEnvironment.Driver.FindElement(By.CssSelector(TestEnvironment.LoadXML("TextAreaAfterClickOnHtmlModuleEdit"))).GetAttribute("value");

@@ -71,8 +71,8 @@
 
   <ClickOnFirstUrlInContentSpecificUrlsAfterEditContent>html/body/form/div[2]/div/div/div[6]/div/div/div/div/table/tbody/tr/td[2]/div/div[2]/div/div/table[2]/tbody/tr[1]/td/table/tbody/tr[3]/td/div/div/div[3]/div[3]/div/table/tbody/tr[2]/td[4]</ClickOnFirstUrlInContentSpecificUrlsAfterEditContent>
 
-  <TestExcelUploadModule></TestExcelUploadModule>
-  <TestExcelUploaddelete></TestExcelUploaddelete>
+  <TestExcelUploadModule>html/body/form/div[2]/div/div/div[6]/div/div/div/div/table/tbody/tr/td[2]/div/div[1]/div[1]/span/span/span/span[1]/img</TestExcelUploadModule>
+  <TestExcelUploaddelete>html/body/form/div[2]/div/div/div[6]/div/div/div/div/table/tbody/tr/td[2]/div/div[1]/div[1]/span/span/table[1]/tbody/tr[7]/td[2]</TestExcelUploaddelete>
   <SQLTestTemplateOfNewTestTemplate></SQLTestTemplateOfNewTestTemplate>
   <SQLModuleEditOfNewTestTemplate></SQLModuleEditOfNewTestTemplate>
 

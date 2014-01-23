@@ -100,7 +100,9 @@
     <Content Include="TestCases\ElementXpath\Beta1.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="TestCases\ElementXpath\GCMS-Live.xml" />
+    <Content Include="TestCases\ElementXpath\GCMS-Live.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="TestCases\ElementXpath\HotelPricer.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
