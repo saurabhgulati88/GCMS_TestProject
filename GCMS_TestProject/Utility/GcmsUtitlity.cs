@@ -146,7 +146,7 @@ namespace GCMS_TestProject.Utility
         public void CompareOutputInChromeForPreview1(string Preview1Url, string expectedDraftvalue, string moduleName)
         {
             IWebDriver driverCRM = new ChromeDriver();
-            System.Threading.Thread.Sleep(5000);
+          //  System.Threading.Thread.Sleep(5000);
             
             driverCRM.Navigate().GoToUrl(Preview1Url);
 

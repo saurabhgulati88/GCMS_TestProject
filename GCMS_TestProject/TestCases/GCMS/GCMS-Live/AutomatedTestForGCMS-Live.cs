@@ -57,59 +57,59 @@ namespace GCMS_TestProject.TestCases
             obj.Sleep(5);
         }
 
-        //[DeploymentItem("GCMS_TestProject\\AppData\\ContentSpecificUrl_InHTMLModule.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ContentSpecificUrl_InHTMLModule.csv", "ContentSpecificUrl_InHTMLModule#csv", DataAccessMethod.Sequential), TestMethod]
-        //public void ContentSpecificUrl_InHTMLModuleGCMS()
-        //{
-        //    IWebDriver Driver = TestEnvironment.Driver;
-        //    //GCMS_Admin obj = new GCMS_Admin();
-        //    string GCMS_admin_url = Record("Url");
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ContentSpecificUrl_InHTMLModuleGCMS.csv", "ContentSpecificUrl_InHTMLModuleGCMS#csv", DataAccessMethod.Sequential), DeploymentItem("GCMS_TestProject\\AppData\\ContentSpecificUrl_InHTMLModuleGCMS.csv"), TestMethod]
+        public void ContentSpecificUrl_InHTMLModuleGCMS()
+        {
+            IWebDriver Driver = TestEnvironment.Driver;
+            //GCMS_Admin obj = new GCMS_Admin();
+            string GCMS_admin_url = Record("Url");
 
-        //    Driver.Navigate().GoToUrl(GCMS_admin_url);
-        //    string tabid = Record("Tabid");
-        //    string[] getTabid = tabid.Split(",".ToCharArray());
+            Driver.Navigate().GoToUrl(GCMS_admin_url);
+            string tabid = Record("Tabid");
+            string[] getTabid = tabid.Split(",".ToCharArray());
 
-        //    string getUrl = GCMS_admin_url + "?tabid=" + getTabid[1];
-        //    Driver.Navigate().GoToUrl(getUrl);
-        //    obj.Sleep(5);
+            string getUrl = GCMS_admin_url + "?tabid=" + getTabid[1];
+            Driver.Navigate().GoToUrl(getUrl);
+            obj.Sleep(5);
 
-        //    string _findModule = "HTMLModuleImageSource";
-        //    string _deleteModule = "HTMLModuleDelete";
-        //    obj.FindModulePresent(_findModule, _deleteModule);
-        //    string TitleOfHTML = Record("TitleOfHTML");//for text box from csv.            
-        //    obj.CreateNewModuleName(TitleOfHTML);
-        //    obj.Sleep(4);
-        //    Random randomNum = new Random();
-        //    int num = randomNum.Next(5, 100);
+            string _findModule = "HTMLModuleImageSource";
+            string _deleteModule = "HTMLModuleDelete";
+            obj.FindModulePresent(_findModule, _deleteModule);
+            string TitleOfHTML = Record("TitleOfHTML");//for text box from csv.            
+            obj.CreateNewModuleName(TitleOfHTML);
+            obj.Sleep(4);
+            Random randomNum = new Random();
+            int num = randomNum.Next(5, 100);
 
-        //    string EditContentMultiLineTextBoxForAllUrlsForPublish = Record("EditContentMultiLineTextBoxForAllUrlsForPublish") + num;
-        //    obj.EditInCreatedNewModulesForPublish(EditContentMultiLineTextBoxForAllUrlsForPublish);
-        //    string EditContentMultiLineTextBoxForAllUrlsForDraft = Record("EditContentMultiLineTextBoxForAllUrlsForDraft") + num;
-        //    obj.EditInCreatedNewModulesForDraft(EditContentMultiLineTextBoxForAllUrlsForDraft);
-        //    //ByLinkTextToClick("LogOut", 5);
-        //    obj.Sleep(4);
+            string EditContentMultiLineTextBoxForAllUrlsForPublish = Record("EditContentMultiLineTextBoxForAllUrlsForPublish") + num;
+            obj.EditInCreatedNewModulesForPublish(EditContentMultiLineTextBoxForAllUrlsForPublish);
+            string EditContentMultiLineTextBoxForAllUrlsForDraft = Record("EditContentMultiLineTextBoxForAllUrlsForDraft") + num;
+            obj.EditInCreatedNewModulesForDraft(EditContentMultiLineTextBoxForAllUrlsForDraft);
+            //ByLinkTextToClick("LogOut", 5);
+            obj.Sleep(4);
 
-        //    string preview2Url = Record("Preview2Url");
-        //    string preview1Url = Record("Preview1Url");
-        //    string moduleName = "HTMLModule";
-        //    obj.CompareOutputInChromeForPreview1(preview1Url, EditContentMultiLineTextBoxForAllUrlsForDraft, moduleName);
-        //    obj.CompareOutputInChromeForPreview2(preview2Url, EditContentMultiLineTextBoxForAllUrlsForPublish, moduleName);
-        //    obj.Sleep(4);
+            string preview2Url = Record("Preview2Url");
+            string preview1Url = Record("Preview1Url");
+            string moduleName = "HTMLModule";
+            obj.CompareOutputInChromeForPreview1(preview1Url, EditContentMultiLineTextBoxForAllUrlsForDraft, moduleName);
+            obj.CompareOutputInChromeForPreview2(preview2Url, EditContentMultiLineTextBoxForAllUrlsForPublish, moduleName);
+            obj.Sleep(4);
 
-        //    Driver.Navigate().GoToUrl(getUrl);
-        //    obj.Sleep(5);
-        //    string EditContentMultiLineTextBoxForPublishForContentSpecific = Record("EditContentMultiLineTextBoxForPublishForContentSpecific") + num;
-        //    obj.EditInContentSpecificModulesForPublish(EditContentMultiLineTextBoxForPublishForContentSpecific);
-        //    obj.Sleep(5);
+            Driver.Navigate().GoToUrl(getUrl);
+            obj.Sleep(5);
+            string EditContentMultiLineTextBoxForPublishForContentSpecific = Record("EditContentMultiLineTextBoxForPublishForContentSpecific") + num;
+            obj.EditInContentSpecificModulesForPublish(EditContentMultiLineTextBoxForPublishForContentSpecific);
+            obj.Sleep(5);
 
-        //    string EditContentMultiLineTextBoxForDraftForContentSpecific = Record("EditContentMultiLineTextBoxForDraftForContentSpecific") + num;
-        //    obj.EditInContentSpecificModulesForDraft(EditContentMultiLineTextBoxForDraftForContentSpecific);
-        //    obj.Sleep(4);
-        //    string Preview2Url_ForContentSpecificUrl = Record("Preview2Url_ForContentSpecificUrl");
-        //    string Preview1Url_ForContentSpecificUrl = Record("Preview1Url_ForContentSpecificUrl");
-        //    obj.CompareOutputInChromeForPreview1(Preview1Url_ForContentSpecificUrl, EditContentMultiLineTextBoxForDraftForContentSpecific, moduleName);
-        //    obj.CompareOutputInChromeForPreview2(Preview2Url_ForContentSpecificUrl, EditContentMultiLineTextBoxForPublishForContentSpecific, moduleName);
+            string EditContentMultiLineTextBoxForDraftForContentSpecific = Record("EditContentMultiLineTextBoxForDraftForContentSpecific") + num;
+            obj.EditInContentSpecificModulesForDraft(EditContentMultiLineTextBoxForDraftForContentSpecific);
+            obj.Sleep(4);
+            string Preview2Url_ForContentSpecificUrl = Record("Preview2Url_ForContentSpecificUrl");
+            string Preview1Url_ForContentSpecificUrl = Record("Preview1Url_ForContentSpecificUrl");
+            obj.CompareOutputInChromeForPreview1(Preview1Url_ForContentSpecificUrl, EditContentMultiLineTextBoxForDraftForContentSpecific, moduleName);
+            obj.CompareOutputInChromeForPreview2(Preview2Url_ForContentSpecificUrl, EditContentMultiLineTextBoxForPublishForContentSpecific, moduleName);
 
-        //}
+        }
 
         [DeploymentItem("GCMS_TestProject\\ForHTML_ModuleGCMS.csv"), DeploymentItem("GCMS_TestProject\\ForHTML_Module.csv"), DeploymentItem("Eclips\\ForHTML_Module.csv"), DeploymentItem("GCMS_TestProject\\AppData\\ForHTML_ModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForHTML_ModuleGCMS.csv", "ForHTML_ModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
         public void ForHTML_ModuleGCMS()
@@ -169,7 +169,7 @@ namespace GCMS_TestProject.TestCases
             string getUrl = GCMS_admin_url + "?tabid=" + getTabid[1];
             Driver.Navigate().GoToUrl(getUrl);
             obj.Sleep(5);
-            string _findModule = "RSSFeedModuleImageSource";
+             string _findModule = "RSSFeedModuleImageSource";
             string _deletingModule = "RSSFeedModuleDelete";
             obj.FindModulePresent(_findModule, _deletingModule);
             obj.SelectNewRssFeedModule();//for RssFeed Dropdown selection.
@@ -198,7 +198,7 @@ namespace GCMS_TestProject.TestCases
 
         }
 
-       [DeploymentItem("GCMS_TestProject\\ForSqlModule.csv"), DeploymentItem("Eclips\\ForSqlModule.csv"), DeploymentItem("GCMS_TestProject\\AppData\\ForSqlModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForSqlModuleGCMS.csv", "ForSqlModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
+       [DeploymentItem("GCMS_TestProject\\ForSqlModule.csv"), DeploymentItem("GCMS_TestProject\\AppData\\ForSqlModuleGCMS.csv"), DeploymentItem("Eclips\\ForSqlModule.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ForSqlModuleGCMS.csv", "ForSqlModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
        public void ForSqlModuleGCMS()
        {
            IWebDriver Driver = GCMS_TestProject.Library.TestEnvironment.Driver;
