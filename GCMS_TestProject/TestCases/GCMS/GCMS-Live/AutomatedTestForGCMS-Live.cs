@@ -57,7 +57,7 @@ namespace GCMS_TestProject.TestCases
             obj.Sleep(5);
         }
 
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ContentSpecificUrl_InHTMLModuleGCMS.csv", "ContentSpecificUrl_InHTMLModuleGCMS#csv", DataAccessMethod.Sequential), DeploymentItem("GCMS_TestProject\\AppData\\ContentSpecificUrl_InHTMLModuleGCMS.csv"), TestMethod]
+        [DeploymentItem("GCMS_TestProject\\AppData\\ContentSpecificUrl_InHTMLModuleGCMS.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ContentSpecificUrl_InHTMLModuleGCMS.csv", "ContentSpecificUrl_InHTMLModuleGCMS#csv", DataAccessMethod.Sequential), TestMethod]
         public void ContentSpecificUrl_InHTMLModuleGCMS()
         {
             IWebDriver Driver = TestEnvironment.Driver;
