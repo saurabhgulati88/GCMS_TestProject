@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4b861b45-94c5-455e-a940-27314ef66278" name="s.g.yu7h@INAGFFPTEC161W 2014-01-22 20:25:58" runUser="CORP\s.g.yu7h" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1747497b-b63c-46c6-9bbd-9937f9080ad4">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="s.g.yu7h_INAGFFPTEC161W 2014-01-22 20_25_58">
+      <DeploymentItem filename="GCMS_TestProject\bin\XML\Beta1.xml" />
+      <DeploymentItem filename="GCMS_TestProject\bin\XML\GCMS-Live.xml" />
+      <DeploymentItem filename="D:\github\GCMS_TestProject\GCMS_TestProject\bin\Debug\WebDriver.dll" />
+      <DeploymentItem filename="GCMS_TestProject\bin\XML\HotelPricer.xml" />
+      <DeploymentItem filename="D:\github\GCMS_TestProject\GCMS_TestProject\bin\Debug\WebDriver.Support.dll" />
+      <DeploymentItem filename="D:\github\GCMS_TestProject\GCMS_TestProject\bin\Debug\Selenium.WebDriverBackedSelenium.dll" />
+      <DeploymentItem filename="GCMS_TestProject\Library\BrowserExe\chromedriver.exe" />
+      <DeploymentItem filename="GCMS_TestProject\Library\BrowserExe\IEDriverServer.exe" />
+      <DeploymentItem filename="D:\github\GCMS_TestProject\GCMS_TestProject\bin\Debug\ThoughtWorks.Selenium.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-22T20:25:58.9136687+05:30" queuing="2014-01-22T20:26:01.3509124+05:30" start="2014-01-22T20:26:01.4879261+05:30" finish="2014-01-22T20:26:30.4398210+05:30" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="INAGFFPTEC161W" outcome="Error" timestamp="2014-01-22T20:26:30.4378208+05:30">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ForHTML_ModuleGCMS" storage="d:\github\gcms_testproject\gcms_testproject\bin\debug\gcms_testproject.dll" id="383afe63-c9e2-3073-53c2-c4f08d692dc0">
+      <DeploymentItems>
+        <DeploymentItem filename="GCMS_TestProject\ForHTML_ModuleGCMS.csv" />
+        <DeploymentItem filename="Eclips\ForHTML_Module.csv" />
+        <DeploymentItem filename="GCMS_TestProject\ForHTML_Module.csv" />
+      </DeploymentItems>
+      <TestMethod codeBase="D:/github/GCMS_TestProject/GCMS_TestProject/bin/Debug/GCMS_TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live, GCMS_TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ForHTML_ModuleGCMS" />
+      <DataSource connectionString="|DataDirectory|\ForHTML_ModuleGCMS.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="ForHTML_ModuleGCMS#csv" />
+    </UnitTest>
+    <OrderedTest name="orderedtestforgcms" storage="d:\github\gcms_testproject\gcms_testproject\testcases\gcms\gcms-live\orderedtestforgcms.orderedtest" id="979fbc39-7dfe-4de8-a70c-58cd2a866c7c">
+      <Execution id="ff2d1a85-89f4-4695-a4da-4379f2f7c834" />
+      <TestLinks>
+        <TestLink id="85ff564a-a662-f674-01b1-acd2beacebc4" name="JustToSignInOnlyGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="383afe63-c9e2-3073-53c2-c4f08d692dc0" name="ForHTML_ModuleGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="12b40025-3fad-e350-3381-7232d4c809c6" name="ForRSSFeedGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </OrderedTest>
+    <UnitTest name="JustToSignInOnlyGCMS" storage="d:\github\gcms_testproject\gcms_testproject\bin\debug\gcms_testproject.dll" id="85ff564a-a662-f674-01b1-acd2beacebc4">
+      <DeploymentItems>
+        <DeploymentItem filename="GCMS_TestProject\ForHTML_ModuleGCMS.csv" />
+      </DeploymentItems>
+      <TestMethod codeBase="D:/github/GCMS_TestProject/GCMS_TestProject/bin/Debug/GCMS_TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live, GCMS_TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="JustToSignInOnlyGCMS" />
+      <DataSource connectionString="|DataDirectory|\ForHTML_ModuleGCMS.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="ForHTML_ModuleGCMS#csv" />
+    </UnitTest>
+    <UnitTest name="ForRSSFeedGCMS" storage="d:\github\gcms_testproject\gcms_testproject\bin\debug\gcms_testproject.dll" id="12b40025-3fad-e350-3381-7232d4c809c6">
+      <DeploymentItems>
+        <DeploymentItem filename="GCMS_TestProject\ForRSSFeed.csv" />
+        <DeploymentItem filename="Eclips\ForRSSFeed.csv" />
+        <DeploymentItem filename="GCMS_TestProject\ForRSSFeedGCMS.csv" />
+      </DeploymentItems>
+      <TestMethod codeBase="D:/github/GCMS_TestProject/GCMS_TestProject/bin/Debug/GCMS_TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live, GCMS_TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ForRSSFeedGCMS" />
+      <DataSource connectionString="|DataDirectory|\ForRSSFeedGCMS.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="ForRSSFeedGCMS#csv" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="979fbc39-7dfe-4de8-a70c-58cd2a866c7c" executionId="ff2d1a85-89f4-4695-a4da-4379f2f7c834" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="85ff564a-a662-f674-01b1-acd2beacebc4" executionId="b4520ee9-530c-4bf8-84c2-7087170399c0" parentExecutionId="ff2d1a85-89f4-4695-a4da-4379f2f7c834" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="383afe63-c9e2-3073-53c2-c4f08d692dc0" executionId="578c1983-d048-43bd-8a53-93cbd0d4a8b3" parentExecutionId="ff2d1a85-89f4-4695-a4da-4379f2f7c834" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="12b40025-3fad-e350-3381-7232d4c809c6" executionId="e9447ed9-5d35-46be-9dd4-50fcf83f3693" parentExecutionId="ff2d1a85-89f4-4695-a4da-4379f2f7c834" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <TestResultAggregation executionId="ff2d1a85-89f4-4695-a4da-4379f2f7c834" testId="979fbc39-7dfe-4de8-a70c-58cd2a866c7c" testName="orderedtestforgcms" computerName="INAGFFPTEC161W" duration="00:00:27.7687766" startTime="2014-01-22T20:26:02.6700443+05:30" endTime="2014-01-22T20:26:30.4388209+05:30" testType="ec4800e8-40e5-4ab3-8510-b8bf29b1904d" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff2d1a85-89f4-4695-a4da-4379f2f7c834">
+      <Counters error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="3" />
+      <InnerResults>
+        <TestResult executionId="b4520ee9-530c-4bf8-84c2-7087170399c0" parentExecutionId="ff2d1a85-89f4-4695-a4da-4379f2f7c834" testId="85ff564a-a662-f674-01b1-acd2beacebc4" testName="JustToSignInOnlyGCMS" computerName="INAGFFPTEC161W" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Pending" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4520ee9-530c-4bf8-84c2-7087170399c0" />
+        <TestResult executionId="578c1983-d048-43bd-8a53-93cbd0d4a8b3" parentExecutionId="ff2d1a85-89f4-4695-a4da-4379f2f7c834" testId="383afe63-c9e2-3073-53c2-c4f08d692dc0" testName="ForHTML_ModuleGCMS" computerName="INAGFFPTEC161W" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Pending" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="578c1983-d048-43bd-8a53-93cbd0d4a8b3" />
+        <TestResult executionId="e9447ed9-5d35-46be-9dd4-50fcf83f3693" parentExecutionId="ff2d1a85-89f4-4695-a4da-4379f2f7c834" testId="12b40025-3fad-e350-3381-7232d4c809c6" testName="ForRSSFeedGCMS" computerName="INAGFFPTEC161W" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Pending" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9447ed9-5d35-46be-9dd4-50fcf83f3693" />
+      </InnerResults>
+    </TestResultAggregation>
+  </Results>
+</TestRun>

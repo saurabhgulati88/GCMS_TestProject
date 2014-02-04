@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="befe5e18-ba36-46ed-85ca-51926b0c4a89" name="s.g.yu7h@INAGFFPTEC161W 2014-01-23 09:40:33" runUser="CORP\s.g.yu7h" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1747497b-b63c-46c6-9bbd-9937f9080ad4">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="s.g.yu7h_INAGFFPTEC161W 2014-01-23 09_40_33">
+      <DeploymentItem filename="GCMS_TestProject\bin\XML\Beta1.xml" />
+      <DeploymentItem filename="GCMS_TestProject\bin\XML\GCMS-Live.xml" />
+      <DeploymentItem filename="D:\github\GCMS_TestProject\GCMS_TestProject\bin\Debug\WebDriver.dll" />
+      <DeploymentItem filename="GCMS_TestProject\bin\XML\HotelPricer.xml" />
+      <DeploymentItem filename="D:\github\GCMS_TestProject\GCMS_TestProject\bin\Debug\WebDriver.Support.dll" />
+      <DeploymentItem filename="D:\github\GCMS_TestProject\GCMS_TestProject\bin\Debug\Selenium.WebDriverBackedSelenium.dll" />
+      <DeploymentItem filename="GCMS_TestProject\Library\BrowserExe\chromedriver.exe" />
+      <DeploymentItem filename="GCMS_TestProject\Library\BrowserExe\IEDriverServer.exe" />
+      <DeploymentItem filename="D:\github\GCMS_TestProject\GCMS_TestProject\bin\Debug\ThoughtWorks.Selenium.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-23T09:40:33.3675386+05:30" queuing="2014-01-23T09:40:34.0545386+05:30" start="2014-01-23T09:40:34.1055386+05:30" finish="2014-01-23T09:41:14.9115386+05:30" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="2" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="INAGFFPTEC161W" outcome="Warning" timestamp="2014-01-23T09:40:33.9125386+05:30">
+        <Text>Warning: Test Run deployment issue: Failed to get the file for deployment item 'GCMS_TestProject\ForHTML_Module.csv' specified by the test 'GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live.ForHTML_ModuleGCMS': System.IO.FileNotFoundException: Could not find file 'D:\github\GCMS_TestProject\GCMS_TestProject\ForHTML_Module.csv'.</Text>
+        <Exception>System.IO.FileNotFoundException: Could not find file 'D:\github\GCMS_TestProject\GCMS_TestProject\ForHTML_Module.csv'.
+File name: 'D:\github\GCMS_TestProject\GCMS_TestProject\ForHTML_Module.csv'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.GetAttributes(String path)
+   at Microsoft.VisualStudio.TestTools.Common.SingleFileProvider.GetFilePaths()
+   at Microsoft.VisualStudio.TestTools.TestManagement.DeploymentCoverageItem.GetFiles(TestRunConfiguration runConfig)
+   at Microsoft.VisualStudio.TestTools.TestManagement.DeploymentManager.DoDeployment(TestRun run, FileCopyService fileCopyService)</Exception>
+      </RunInfo>
+      <RunInfo computerName="INAGFFPTEC161W" outcome="Warning" timestamp="2014-01-23T09:40:33.9255386+05:30">
+        <Text>Warning: Test Run deployment issue: Failed to get the file for deployment item 'Eclips\ForHTML_Module.csv' specified by the test 'GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live.ForHTML_ModuleGCMS': System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\github\GCMS_TestProject\Eclips\ForHTML_Module.csv'.</Text>
+        <Exception>System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\github\GCMS_TestProject\Eclips\ForHTML_Module.csv'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.GetAttributes(String path)
+   at Microsoft.VisualStudio.TestTools.Common.SingleFileProvider.GetFilePaths()
+   at Microsoft.VisualStudio.TestTools.TestManagement.DeploymentCoverageItem.GetFiles(TestRunConfiguration runConfig)
+   at Microsoft.VisualStudio.TestTools.TestManagement.DeploymentManager.DoDeployment(TestRun run, FileCopyService fileCopyService)</Exception>
+      </RunInfo>
+      <RunInfo computerName="INAGFFPTEC161W" outcome="Warning" timestamp="2014-01-23T09:40:33.9265386+05:30">
+        <Text>Warning: Test Run deployment issue: Failed to get the file for deployment item 'GCMS_TestProject\ForHTML_ModuleGCMS.csv' specified by the test 'GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live.ForHTML_ModuleGCMS': System.IO.FileNotFoundException: Could not find file 'D:\github\GCMS_TestProject\GCMS_TestProject\ForHTML_ModuleGCMS.csv'.</Text>
+        <Exception>System.IO.FileNotFoundException: Could not find file 'D:\github\GCMS_TestProject\GCMS_TestProject\ForHTML_ModuleGCMS.csv'.
+File name: 'D:\github\GCMS_TestProject\GCMS_TestProject\ForHTML_ModuleGCMS.csv'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.GetAttributes(String path)
+   at Microsoft.VisualStudio.TestTools.Common.SingleFileProvider.GetFilePaths()
+   at Microsoft.VisualStudio.TestTools.TestManagement.DeploymentCoverageItem.GetFiles(TestRunConfiguration runConfig)
+   at Microsoft.VisualStudio.TestTools.TestManagement.DeploymentManager.DoDeployment(TestRun run, FileCopyService fileCopyService)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ForHTML_ModuleGCMS" storage="d:\github\gcms_testproject\gcms_testproject\bin\debug\gcms_testproject.dll" id="383afe63-c9e2-3073-53c2-c4f08d692dc0">
+      <DeploymentItems>
+        <DeploymentItem filename="GCMS_TestProject\AppData\ForHTML_ModuleGCMS.csv" />
+        <DeploymentItem filename="Eclips\ForHTML_Module.csv" />
+        <DeploymentItem filename="GCMS_TestProject\ForHTML_ModuleGCMS.csv" />
+        <DeploymentItem filename="GCMS_TestProject\ForHTML_Module.csv" />
+      </DeploymentItems>
+      <TestMethod codeBase="D:/github/GCMS_TestProject/GCMS_TestProject/bin/Debug/GCMS_TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live, GCMS_TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ForHTML_ModuleGCMS" />
+      <DataSource connectionString="|DataDirectory|\ForHTML_ModuleGCMS.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="ForHTML_ModuleGCMS#csv" />
+    </UnitTest>
+    <OrderedTest name="orderedtestforgcms" storage="d:\github\gcms_testproject\gcms_testproject\testcases\gcms\gcms-live\orderedtestforgcms.orderedtest" id="979fbc39-7dfe-4de8-a70c-58cd2a866c7c">
+      <Execution id="b1a6a665-8c7b-49ca-b3df-272e455975e1" />
+      <TestLinks>
+        <TestLink id="85ff564a-a662-f674-01b1-acd2beacebc4" name="JustToSignInOnlyGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="383afe63-c9e2-3073-53c2-c4f08d692dc0" name="ForHTML_ModuleGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="12b40025-3fad-e350-3381-7232d4c809c6" name="ForRSSFeedGCMS" storage="..\..\..\bin\debug\gcms_testproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </OrderedTest>
+    <UnitTest name="JustToSignInOnlyGCMS" storage="d:\github\gcms_testproject\gcms_testproject\bin\debug\gcms_testproject.dll" id="85ff564a-a662-f674-01b1-acd2beacebc4">
+      <DeploymentItems>
+        <DeploymentItem filename="GCMS_TestProject\ForHTML_ModuleGCMS.csv" />
+        <DeploymentItem filename="GCMS_TestProject\AppData\ForHTML_ModuleGCMS.csv" />
+      </DeploymentItems>
+      <TestMethod codeBase="D:/github/GCMS_TestProject/GCMS_TestProject/bin/Debug/GCMS_TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live, GCMS_TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="JustToSignInOnlyGCMS" />
+      <DataSource connectionString="|DataDirectory|\ForHTML_ModuleGCMS.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="ForHTML_ModuleGCMS#csv" />
+    </UnitTest>
+    <UnitTest name="ForRSSFeedGCMS" storage="d:\github\gcms_testproject\gcms_testproject\bin\debug\gcms_testproject.dll" id="12b40025-3fad-e350-3381-7232d4c809c6">
+      <DeploymentItems>
+        <DeploymentItem filename="GCMS_TestProject\ForRSSFeed.csv" />
+        <DeploymentItem filename="Eclips\ForRSSFeed.csv" />
+        <DeploymentItem filename="GCMS_TestProject\ForRSSFeedGCMS.csv" />
+      </DeploymentItems>
+      <TestMethod codeBase="D:/github/GCMS_TestProject/GCMS_TestProject/bin/Debug/GCMS_TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live, GCMS_TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ForRSSFeedGCMS" />
+      <DataSource connectionString="|DataDirectory|\ForRSSFeedGCMS.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="ForRSSFeedGCMS#csv" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="979fbc39-7dfe-4de8-a70c-58cd2a866c7c" executionId="b1a6a665-8c7b-49ca-b3df-272e455975e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="85ff564a-a662-f674-01b1-acd2beacebc4" executionId="34f2113b-67d3-442a-9d3b-c3f8296b211e" parentExecutionId="b1a6a665-8c7b-49ca-b3df-272e455975e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="383afe63-c9e2-3073-53c2-c4f08d692dc0" executionId="f4b12f06-ea9e-4257-84b6-ecedfac320ff" parentExecutionId="b1a6a665-8c7b-49ca-b3df-272e455975e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="12b40025-3fad-e350-3381-7232d4c809c6" executionId="54055ab8-dfe3-47f6-9374-55094d95ec3c" parentExecutionId="b1a6a665-8c7b-49ca-b3df-272e455975e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <TestResultAggregation executionId="b1a6a665-8c7b-49ca-b3df-272e455975e1" testId="979fbc39-7dfe-4de8-a70c-58cd2a866c7c" testName="orderedtestforgcms" computerName="INAGFFPTEC161W" duration="00:00:40.5697442" startTime="2014-01-23T09:40:34.2195386+05:30" endTime="2014-01-23T09:41:14.8385386+05:30" testType="ec4800e8-40e5-4ab3-8510-b8bf29b1904d" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1a6a665-8c7b-49ca-b3df-272e455975e1">
+      <Counters error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" passed="2" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="34f2113b-67d3-442a-9d3b-c3f8296b211e" parentExecutionId="b1a6a665-8c7b-49ca-b3df-272e455975e1" testId="85ff564a-a662-f674-01b1-acd2beacebc4" testName="JustToSignInOnlyGCMS" computerName="INAGFFPTEC161W" duration="00:00:27.8459269" startTime="2014-01-23T09:40:34.2695386+05:30" endTime="2014-01-23T09:41:02.3445386+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34f2113b-67d3-442a-9d3b-c3f8296b211e" resultType="DataDrivenTest">
+          <Output>
+          </Output>
+          <Counters error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="1" completed="0" inProgress="0" pending="0" />
+          <InnerResults>
+            <UnitTestResult executionId="34d5cf9f-c444-454c-a8d1-a9c4963e689c" parentExecutionId="34f2113b-67d3-442a-9d3b-c3f8296b211e" testId="85ff564a-a662-f674-01b1-acd2beacebc4" testName="JustToSignInOnlyGCMS" computerName="INAGFFPTEC161W" duration="00:00:27.6875494" startTime="2014-01-23T09:40:34.6085386+05:30" endTime="2014-01-23T09:41:02.3255386+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34f2113b-67d3-442a-9d3b-c3f8296b211e" dataRowInfo="0" resultType="DataDrivenDataRow" />
+          </InnerResults>
+        </UnitTestResult>
+        <UnitTestResult executionId="f4b12f06-ea9e-4257-84b6-ecedfac320ff" parentExecutionId="b1a6a665-8c7b-49ca-b3df-272e455975e1" testId="383afe63-c9e2-3073-53c2-c4f08d692dc0" testName="ForHTML_ModuleGCMS" computerName="INAGFFPTEC161W" duration="00:00:12.4822559" startTime="2014-01-23T09:41:02.3445386+05:30" endTime="2014-01-23T09:41:14.8365386+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4b12f06-ea9e-4257-84b6-ecedfac320ff" resultType="DataDrivenTest">
+          <Output>
+          </Output>
+          <Counters error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+          <InnerResults>
+            <UnitTestResult executionId="b7f6779f-a8ce-4b99-9486-fab31d6003ea" parentExecutionId="f4b12f06-ea9e-4257-84b6-ecedfac320ff" testId="383afe63-c9e2-3073-53c2-c4f08d692dc0" testName="ForHTML_ModuleGCMS" computerName="INAGFFPTEC161W" duration="00:00:12.3805355" startTime="2014-01-23T09:41:02.4555386+05:30" endTime="2014-01-23T09:41:14.8355386+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4b12f06-ea9e-4257-84b6-ecedfac320ff" dataRowInfo="0" resultType="DataDrivenDataRow">
+              <Output>
+                <ErrorInfo>
+                  <Message>Test method GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live.ForHTML_ModuleGCMS threw exception: 
+OpenQA.Selenium.WebDriverException: A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:7056/hub/session/f5ed0390-494f-4370-b4a5-f27f4fb73dfa/element. The status of the exception was ConnectionClosed, and the message was: The underlying connection was closed: The connection was closed unexpectedly. ---&gt; System.Net.WebException: The underlying connection was closed: The connection was closed unexpectedly.</Message>
+                  <StackTrace>    at System.Net.HttpWebRequest.GetResponse()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+ --- End of inner exception stack trace ---
+    at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Firefox.Internal.ExtensionConnection.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at GCMS_TestProject.Utility.GCMS_CodedUi.FindModulePresent(String _module, String _deleteModule) in D:\github\GCMS_TestProject\GCMS_TestProject\Utility\GCMS_CodedUi.cs:line 228
+   at GCMS_TestProject.TestCases.AutomatedTestForGCMS_Live.ForHTML_ModuleGCMS() in D:\github\GCMS_TestProject\GCMS_TestProject\TestCases\GCMS\GCMS-Live\AutomatedTestForGCMS-Live.cs:line 138
+</StackTrace>
+                </ErrorInfo>
+              </Output>
+            </UnitTestResult>
+          </InnerResults>
+        </UnitTestResult>
+        <TestResult executionId="54055ab8-dfe3-47f6-9374-55094d95ec3c" parentExecutionId="b1a6a665-8c7b-49ca-b3df-272e455975e1" testId="12b40025-3fad-e350-3381-7232d4c809c6" testName="ForRSSFeedGCMS" computerName="INAGFFPTEC161W" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54055ab8-dfe3-47f6-9374-55094d95ec3c" />
+      </InnerResults>
+    </TestResultAggregation>
+  </Results>
+</TestRun>
