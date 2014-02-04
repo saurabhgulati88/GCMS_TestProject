@@ -310,57 +310,6 @@ namespace GCMS_TestProject.TestCases
 
         }
 
-        //[DeploymentItem("GCMS_TestProject\\AppData\\ForHTML_Module.csv"), DeploymentItem("GCMS_TestProject\\ExcelUpload.csv"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\ExcelUpload.csv", "ExcelUpload#csv", DataAccessMethod.Sequential), TestMethod]
-        //public void ForFileExplorerGCMS()
-        //{
-        //    IWebDriver Driver = TestEnvironment.Driver;
-        //    string GCMS_admin_url = Record("Url");
-
-        //    Driver.Navigate().GoToUrl(GCMS_admin_url);
-        //    string tabid = Record("Tabid");
-        //    string[] getTabid = tabid.Split(",".ToCharArray());
-
-        //    string getUrl = GCMS_admin_url + "?tabid=" + getTabid[1];
-        //    Driver.Navigate().GoToUrl(getUrl);
-        //    obj.Sleep(5);
-
-        //    string _findExcelModule = "TestFileExplorerModule";
-        //    string _deleteExcelModule = "TestFileExplorerUploaddelete";
-        //    obj.FindModulePresent(_findExcelModule, _deleteExcelModule); //To delete eralier one.
-
-        //    obj.selectNewExcelModuleFromDropDown();
-        //    //To Create new SqlModule.  
-        //    string TitleOfExcel = Record("TitleOfFileExplorer");
-        //    obj.CreateNewModuleName(TitleOfExcel);
-
-
-        //    //For CMS-SQL Edit
-        //    string _excelModule = "FileExplorerTestTemplateOfNewTestTemplate"; //xpath element same as abv.
-        //    string _excelModuleEdit = "FileExplorerModuleEditOfNewTestTemplate";
-
-        //    string selectExcelFile = "SelectBanner";
-        //    TestEnvironment.Driver.FindElement(By.XPath(TestEnvironment.LoadXML(selectExcelFile))).Click();
-
-        //    string excelHeaderTemplate = Record("ExcelHeader Template For Publish");
-        //    string excelItemTemplate = Record("ExcelItem Template");
-        //    string excelfooterTemplate = Record("ExcelFooter Template");
-        //    string excelNumberOfRecords = Record("ExcelNumber Of Records");
-        //    string excelNumberOfColumns = Record("ExcelNumber Of Columns");
-        //    obj.setValuesForEditExcelmoduleForPublish(_excelModule, _excelModuleEdit, excelHeaderTemplate, excelItemTemplate, excelfooterTemplate, excelNumberOfRecords, excelNumberOfColumns);
-        //    obj.Sleep(4);
-
-        //    string SQLHeaderTemplateForDraft = Record("SQLHeader Template For Draft");
-        //    obj.setValuesForEditExcelmoduleForDraft(_excelModule, _excelModuleEdit, SQLHeaderTemplateForDraft, excelItemTemplate, excelfooterTemplate, excelNumberOfRecords, excelNumberOfColumns);
-        //    obj.Sleep(4);
-
-        //    string moduleName = Record("ModuleName");//"SQLModule";              
-        //    string preview2Url = Record("Preview2Url");
-        //    string preview1Url = Record("Preview1Url");
-
-        //    obj.CompareOutputInChromeForPreview1(preview1Url, "For Draft", moduleName);
-        //    obj.CompareOutputInChromeForPreview2(preview2Url, "For Publish", moduleName);
-
-        //}
-
+      
     }
 }
